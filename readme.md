@@ -1,20 +1,14 @@
-#  HTML5 Reset WordPress Theme
+## What was the theme goal?
 
-HTML5 Reset is a simple set of *WordPress* best practices to get web projects off on the right foot.
+The customer want to give a quick project overview and want to handle it very easy in his CMS.
 
-## Some of the features:
+## The Solution
 
-1. A style sheet designed to strip initial styles from browsers, starting your development off with a blank slate.
-2. Easy to customize — remove whatever you don't need, keep what you do.
-3. Google Analytics and jQuery calls
-4. Meta tags ready for population
-5. Empty print and small-screen media queries
-6. Modernizr.js [http://www.modernizr.com/](http://www.modernizr.com/) enables HTML5 compatibility with IE (and a dozen other great features)
-7. [Prefix-free.js](http://leaverou.github.io/prefixfree/) allowing us to only use un-prefixed styles in our CSS
-8. IE-specific classes for simple CSS-targeting
-9. iPhone/iPad/iTouch icon snippets, plus social/app meta tags for Twitter, Facebook, Windows 8
-10. Lots of other keen stuff
+A single page design with different teaser loops. There are 3 post types to order the projects. We create via functions.php 3 custom post types and switch off every field which is not needed.
+The content of every project item was in bullet point form so we decide only use the native WordPress Custom Fields - https://codex.wordpress.org/Custom_Fields
+We definend a list of neccessary bullet items which can easy to choose from a dropdown menu. 
 
-## Get the plain HTML theme:
+## Where is the magic?
 
-https://github.com/murtaugh/HTML5-Reset
+loops/content.php - get all content bullets and convert it to HTML data attributes
+js/pauleisenach.js - These data attributes are neccessary for the custom JS exapnd function
